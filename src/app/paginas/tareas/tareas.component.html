@@ -1,0 +1,20 @@
+<div class="titulo">
+  <h1>Tareas</h1>
+</div>
+
+<div class='container'>
+<form>
+  <label for="txtTarea">Agregar Tarea</label>
+  <input type="text" name="txtTarea" id="txtTarea" [(ngModel)]='tarea.tarea'>
+  <br>
+  <label for="txtFecha">Fecha</label>
+  <input type="text" name="txtFecha" id="txtFecha" [(ngModel)]='tarea.fecha'>
+  <br>
+  <label for="txtEtiq">Etiquetas (separadas por comas , )</label>
+  <input type="text" name="txtEtiq" id="txtEtiq" [(ngModel)]='tarea.etiquetas'>
+  <br>
+  <button class='edit' type="button" (click)="guardarTarea()">Agregar Tarea</button>
+  <button class='listar' type="button" (click)="listarTareas()">Listar Tareas</button>
+</form>
+<label>{{mensaje}}</label>
+</div>

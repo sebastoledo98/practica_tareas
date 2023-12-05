@@ -11,6 +11,14 @@ body {
   margin: 20px auto;
 }
 
+.titulo{
+  width: 80%;
+  margin: 10px auto;
+  background-color: #44a554;
+  padding: 5px 0px;;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   color: #333;
@@ -80,7 +88,7 @@ tr:hover {
   text-align: right;
 }
 
-.edit, .delete {
+.edit, .delete, .listar {
   padding: 5px 10px;
   margin: 5px;
   cursor: pointer;
@@ -89,9 +97,8 @@ tr:hover {
 }
 
 .edit {
-  background-color: #2196f3;
+  background-color: #4caf50;
   color: #fff;
-  border-radius: 30px;
 }
 
 .delete {
@@ -99,23 +106,8 @@ tr:hover {
   color: #fff;
 }
 
-/* Estilos para el banner */
-.banner {
-  background-color: #66a544; /* Color de fondo del banner */
-  color: #fff; /* Color del texto en el banner */
-  padding: 20px; /* Espaciado interno del banner */
-  text-align: center; /* Centrar el texto en el banner */
+.listar{
+  background-color: #2196f3;
+  color: #fff;
 }
 
-/* Estilos para el título de la página en el banner */
-.banner h1 {
-  margin: 0; /* Elimina el margen superior del título */
-  font-size: 24px; /* Tamaño del texto del título */
-  color: white;
-}
-
-/* Otros estilos opcionales para personalizar el banner */
-.banner p {
-  font-size: 16px; /* Tamaño del texto adicional si lo tienes */
-  margin-top: 10px; /* Margen superior para el texto adicional */
-}

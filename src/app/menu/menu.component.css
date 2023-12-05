@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   margin: 20px auto;
 }
 
@@ -80,7 +80,7 @@ tr:hover {
   text-align: right;
 }
 
-.edit, .delete {
+.edit, .delete, .listar{
   padding: 5px 10px;
   margin: 5px;
   cursor: pointer;
@@ -89,9 +89,8 @@ tr:hover {
 }
 
 .edit {
-  background-color: #2196f3;
+  background-color: #4caf50;
   color: #fff;
-  border-radius: 30px;
 }
 
 .delete {
@@ -99,23 +98,51 @@ tr:hover {
   color: #fff;
 }
 
-/* Estilos para el banner */
-.banner {
-  background-color: #66a544; /* Color de fondo del banner */
-  color: #fff; /* Color del texto en el banner */
-  padding: 20px; /* Espaciado interno del banner */
-  text-align: center; /* Centrar el texto en el banner */
+.listar{
+  background-color: #2196f3;
+  color: #fff;
 }
 
-/* Estilos para el título de la página en el banner */
-.banner h1 {
-  margin: 0; /* Elimina el margen superior del título */
-  font-size: 24px; /* Tamaño del texto del título */
+:host {
+  display: block;
+  padding: 16px;
+}
+
+div {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos para el menú de navegación */
+nav {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+/* Estilos para los vínculos del menú */
+a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Otros estilos opcionales para personalizar el banner */
-.banner p {
-  font-size: 16px; /* Tamaño del texto adicional si lo tienes */
-  margin-top: 10px; /* Margen superior para el texto adicional */
+a:hover {
+  background-color: #ddd;
+  color: black;
 }

@@ -23,7 +23,7 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+label{
   display: block;
   margin-bottom: 8px;
 }
@@ -34,7 +34,7 @@ input[type="submit"] {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
@@ -85,13 +85,11 @@ tr:hover {
   margin: 5px;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 30px;
 }
 
 .edit {
   background-color: #2196f3;
   color: #fff;
-  border-radius: 30px;
 }
 
 .delete {
@@ -99,23 +97,33 @@ tr:hover {
   color: #fff;
 }
 
-/* Estilos para el banner */
-.banner {
-  background-color: #66a544; /* Color de fondo del banner */
-  color: #fff; /* Color del texto en el banner */
-  padding: 20px; /* Espaciado interno del banner */
-  text-align: center; /* Centrar el texto en el banner */
+ul {
+  list-style-type: square;
 }
 
-/* Estilos para el título de la página en el banner */
-.banner h1 {
-  margin: 0; /* Elimina el margen superior del título */
-  font-size: 24px; /* Tamaño del texto del título */
-  color: white;
+li {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Otros estilos opcionales para personalizar el banner */
-.banner p {
-  font-size: 16px; /* Tamaño del texto adicional si lo tienes */
-  margin-top: 10px; /* Margen superior para el texto adicional */
+/* Estilos para los hipervínculos */
+a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titulo{
+  width: 80%;
+  margin: 10px auto;
+  background-color: #44a554;
+  padding: 5px 0px;
+  text-align: center;
 }

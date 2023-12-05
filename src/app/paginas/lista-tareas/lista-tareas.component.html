@@ -1,0 +1,13 @@
+<div class="titulo">
+  <h1>Lista de Tareas</h1>
+</div>
+
+<body>
+  <div class="container">
+    <ul>
+      <li *ngFor="let tarea of listaTareas | async">
+        <a routerLink="/paginas/tareas/{{tarea.uid}}">{{tarea.tarea}} {{tarea.fecha}}</a>
+      </li>
+    </ul>
+  </div>
+</body>

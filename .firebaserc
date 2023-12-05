@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "practica-tareas": {
+      "hosting": {
+        "practica_tareas": [
+          "practica-tareas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "practica-tareas"
+  }
+}

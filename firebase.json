@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "practica_tareas",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
