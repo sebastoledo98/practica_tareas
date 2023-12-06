@@ -14,6 +14,7 @@ import { environment } from 'src/environments/environment';
 import { FIREBASE_OPTIONS, FIREBASE_APP_NAME } from '@angular/fire/compat';
 import { ViewTareasComponent } from './paginas/view-tareas/view-tareas.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   imports: [
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    AngularFirestoreModule.enablePersistence(),
     BrowserModule,
     AppRoutingModule,
     FormsModule,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Tarea } from 'src/app/domain/tarea';
 import { TareasFirestoreService } from 'src/app/services/tareas-firestore.service';
+import { TareasService } from '../../services/tareas.service';
 import { NavigationExtras } from '@angular/router';
 import { Router } from '@angular/router';
 
@@ -14,7 +15,8 @@ export class ListaTareasComponent {
   tareas: Tarea[] = [];
   listaTareas: any;
 
-  constructor(private tareasFirestore: TareasFirestoreService, private router: Router){
+  constructor(private tareasFirestore: TareasFirestoreService, private router: Router,
+              private tareasServicio: TareasService){
     this.listaTareas = this.tareasFirestore.listar();
   }
 

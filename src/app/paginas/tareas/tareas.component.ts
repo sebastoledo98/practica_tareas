@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { TareasFirestoreService } from 'src/app/services/tareas-firestore.service';
+import { TareasService } from '../../services/tareas.service';
 import { Tarea } from 'src/app/domain/tarea';
 //import { MatDialog, MatDialogConfig } from '@angular/material';
 
@@ -15,7 +16,8 @@ export class TareasComponent {
   mensaje: string = '';
 
   constructor(private router: Router,
-              private tareasFirestore: TareasFirestoreService
+              private tareasFirestore: TareasFirestoreService,
+              private tareasServicio: TareasService
               //public dialog: MatDialog
              ) {
     /*const dialogConfig = new MatDialogConfig();
@@ -34,6 +36,7 @@ export class TareasComponent {
   }
 
   guardarTarea(){
+    this.tareasServicio.addTarea(this.tarea);
     this.tareasFirestore.guardar(this.tarea);
     this.mensaje = 'Tarea agregada con exito';
     this.tarea = new Tarea();
